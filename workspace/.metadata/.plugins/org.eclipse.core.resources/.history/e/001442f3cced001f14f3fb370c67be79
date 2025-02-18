@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>a링크와 이미지</h3>
+	
+	<a href="http://www.naver.com">네이버로 이동</a>
+	<a href="hello.html">hello페이지로 이동</a>
+	
+	<img scr="OgK0X2DAdO0K6vIBGUDvE8fR2jP0dmTu3z6mAM0JVGw310C7H3c9DmsQ_SyBc-s835u5kwHxVpe0HutSHIqo7Q.webp">
+
+
+</body>
+</html>
