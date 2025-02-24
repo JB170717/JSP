@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>get방식</h3>
+	
+	<form>
+		날짜:<input type="date"><br>
+		메세지:<textarea rows="5" cols="50"></textarea>
+		
+		동의항목:
+		<input type="checkbox">coding404의 말을 잘 듣겠습니다.
+		<input type="checkbox">하루에 적어도 1개의 코딩테스트 문제를 풀겠습니다.
+		
+	</form>
+	
+
+
+
+</body>
+</html>

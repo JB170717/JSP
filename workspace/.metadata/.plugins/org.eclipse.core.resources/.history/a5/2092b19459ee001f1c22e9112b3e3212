@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>입력양식</h3>
+	
+    <!-- 사용자에게 입력받은 값을 서버에 전송하려면 form -->
+    
+    <form>
+    	
+    	아이디:<input type="text" name="id"><br>
+    	비밀번호:<input type="password" name="pw"><br>
+    	생일:<input type="date">
+    	
+    </form>
+    
+</body>
+</html>

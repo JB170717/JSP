@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>Emp정보</h3><br>
+	사원번호:<input type="text" name="employee_id"><br>
+	이름:<input type="text" name="name"><br>
+	성별:<input type="radio" name="gender">남자
+	    <input type="radio" name="gender">여자
+
+</body>
+</html>

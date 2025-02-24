@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>블록과 인라인</h3>
+	
+	<!--
+	 1. 블럭요소는 전체너비를 가집니다. 자동으로 줄바꿈됩니다.
+	 2. 블록요소 안에는 블럭요소, 인라인요소를 자식태그로 가질 수 있습니다. 
+	 -->
+	<h4>블럭요소</h4>
+	<p>블럭요소</p>
+	<ul>
+		<li>블럭요소</li>
+		<li>블럭요소</li>
+		<li>블럭요소</li>
+	</ul>
+	<div>
+		블럭요소
+	</div>
+
+	<table>
+		<tr>
+			<td>블럭요소</td>
+		</tr>
+	</table>
+		
+	<form>
+	 	블럭요소
+	</form>
+	
+	<hr>
+	
+	<img alt="인라인" src="#">
+	<a>인라인</a>
+	<small>인라인</small>
+	<i>인라인</i>
+	<span>인라인</span>
+	<b>인라인</b>
+	<input type="text">
+	
+	
+</body>
+</html>

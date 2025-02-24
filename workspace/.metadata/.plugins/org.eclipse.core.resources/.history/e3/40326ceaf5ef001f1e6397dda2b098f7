@@ -1,0 +1,27 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+
+	List<String> list=(ArrayList)application.getAttribute("menu");
+	int total=(int)application.getAttribute("total_count");
+%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<%for(String menu:list) {%>
+		<li><%=menu %></li>
+		<% } %>
+	</ul>
+
+</body>
+</html>

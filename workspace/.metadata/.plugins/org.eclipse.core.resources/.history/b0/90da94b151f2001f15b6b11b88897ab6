@@ -1,0 +1,26 @@
+<%@page import="com.hr.model.DepartmentDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	//DepartmentDTO dto =(DepartmentDTO)request.getAttribute("dto");
+	//String name =(String)request.getAttribute("name");
+	
+	
+%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	${requestScope.dto}
+	${requestScope.dto.departmentId}<br> <!-- dto.(getter명을 따라감) -->
+	${requestScope.dto.departmentName }<br>
+	${requestScope.dto.managerId }<br>
+	${requestScope.dto.locationId }<br>
+	
+</body>
+</html>

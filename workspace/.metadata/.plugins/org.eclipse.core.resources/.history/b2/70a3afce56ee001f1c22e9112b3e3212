@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>테이블 태그</h3>
+	
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>나이</th>
+			<th>주소</th>
+		</tr>
+	
+	</table>
+	
+	
+	
+	
+	
+</body>
+</html>

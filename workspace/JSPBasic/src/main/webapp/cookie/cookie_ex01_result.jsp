@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+
+	String id=request.getParameter("id");
+	String pw=request.getParameter("pw");
+	String idcheck=request.getParameter("idcheck"); 
+	
+	if(id.equals(pw)){
+		if(idcheck!=null){ //체크박스 눌럿는지 여부
+			Cookie rememnerMe=new Cookie("rememnerMe",id); //비번도 맞고 체크박스도 눌리면 아이디저장용 쿠키생성
+			rememnerMe.setMaxAge(87600000);
+			response.addCookie(rememnerMe);	
+		}else{ //체크박스안누름
+			Cookie cookie=new Cookie("userId",id);
+			cookie.setMaxAge(1800);
+			response.addCookie(cookie);
+			response.sendRedirect("cookie_ex01_welcome.jsp");
+		}
+	}else{
+		response.sendRedirect("cookie_ex01.jsp"); //비번 틀리면 초기화면으로
+	}
+	
+	//id와 pw가 동일하면 로그인 성공	
+/* 	if(id.equals(pw)){
+		//이시점에 쿠키생성!
+		Cookie cookie=new Cookie("userId",id);
+		cookie.setMaxAge(1800);
+		response.addCookie(cookie);
+		response.sendRedirect("cookie_ex01_welcome.jsp");
+
+		
+	}else{
+		response.sendRedirect("cookie_ex01.jsp");
+	} */
+	
+%>   
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<b>로그인성공!</b><br>
+	<a href="cookie_ex01.jsp">로그인화면으로 돌아가기</a>
+</body>
+</html>

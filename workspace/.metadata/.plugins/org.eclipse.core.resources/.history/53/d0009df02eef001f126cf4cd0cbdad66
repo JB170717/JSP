@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	request.setCharacterEncoding("utf-8");
+
+	String name=request.getParameter("name");	
+
+	double weigth=Double.parseDouble(request.getParameter("weigth"));
+	double height=Double.parseDouble(request.getParameter("height"));
+	
+	double bmi = weigth/((double)(height/100)*(double)(height/100));
+	String BMI="";
+	if(bmi>=25){
+		BMI="과체중";
+	}else if(bmi<=18){
+		BMI="저체중";
+	}else{
+		BMI="정상";
+	}
+	
+%>   
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	이름 : <%=name %><br>
+	키 : <%=weigth %><br>
+	몸무게 : <%=height %><br>
+	BMI지수: <%=BMI %><br>
+	
+</body>
+</html>

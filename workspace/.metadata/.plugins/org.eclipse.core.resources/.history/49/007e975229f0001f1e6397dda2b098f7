@@ -1,0 +1,69 @@
+package com.hr.model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class DepartmentDAO {
+
+	/*
+	 * DAO 클래스는 여러개 만들필요 없이, 객체가 한개만 생성되도록
+	 * singleton클래스로 생성
+	 * 
+	 */
+	
+	//1.나자신의 객체를 1개 생성한다.
+	private static DepartmentDAO instance = new DepartmentDAO();
+	//2.외부에서 생성자를 호출할 수 없도록 private으로 막는다
+	private DepartmentDAO() {
+		
+	}
+	//3.외부에서 객체를 요구할 떄, instance를 반환합니다.
+	public static DepartmentDAO getInstance() {
+		return instance;		
+	}
+	
+	private String url="jdbc:oracle:thin:@localhost:1521:xe";
+	private String uid="HR";
+	private String upw="HR";
+	
+	
+	
+	//메서드로 Datebase에 접근해서 값을 처리.
+	//부서아이디를 받아서, 부서정보를 반환하는 메서드
+	public DepartmentDTO getDepartmentInfo(String departmentId) {
+		
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		ResultSet rs =null;
+		
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(conn!=null) conn.close(); 
+				if(pstmt!=null) pstmt.close(); 
+				if(rs!=null) rs.close(); 
+			} catch (Exception e2) {
+				
+			}
+		}
+		
+		
+		return null;				
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

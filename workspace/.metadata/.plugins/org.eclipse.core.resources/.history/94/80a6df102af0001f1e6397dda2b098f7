@@ -1,0 +1,18 @@
+<%@page import="com.hr.model.DepartmentDTO"%>
+<%@page import="com.hr.model.DepartmentDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String departmentID = request.getParameter("departmentID");
+	
+	//model로 연결 
+	
+	//DAO객체 생성
+	DepartmentDAO dao =DepartmentDAO.getInstance();
+	//부서정보
+	DepartmentDTO dto = dao.getDepartmentInfo(departmentID);
+
+	
+%>
+
+

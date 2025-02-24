@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>Emp정보</h3><br>
+	
+	<table>
+		<tr align="left">
+			<th>사원번호:</th>
+			<th><input type="text" name="employee_id"></th>
+		</tr>
+		<tr align="left">
+			<th>이름:</th>
+			<th><input type="text" name="name"></th>
+		</tr>
+		<tr align="left">
+			<th>성별:</th>
+			<th>
+				<input type="radio" name="gender">남자
+		    	<input type="radio" name="gender">여자
+			</th>
+		</tr>
+		<tr align="left">
+			<th>직업:</th>
+			<th><input type="text" name="job"></th>
+		</tr>
+		<tr align="left">
+			<th>상사:</th>
+			<th><input type="text" name="job"></th>
+		</tr>
+		<tr align="left">
+			<th>입사일:</th>
+			<th><input type="date"></th>
+		</tr>
+		<tr align="left">
+			<th>급여:</th>
+			<th><input type="text" name="salary"></th>
+		</tr>
+		<tr align="left">
+			<th>커미션:</th>
+			<th><input type="text" name="commission"></th>
+		</tr>
+		<tr align="left">
+			<th>부서번호:</th>
+			<th>
+				<select>
+					<option>10ACCOUNTING NEWYORK</option>
+				</select>
+			
+			</th>
+		</tr>
+									
+			
+	
+	
+	</table>
+
+	
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+   <!-- 
+    1. form태그를 이용해서 post형식으로 이름, 키와 몸무게를 입력받음
+   2. quiz02_ok.jsp로 전송
+   3. quiz02_ok.jsp페이지 에서는 넘어간 값을 BMI지수를 처리
+   4. BMI공식 = kg / (cm/100 * cm/100)  -> 문자열이기 때문에 형변환 진행(실수)
+   화면에 이름, 키, 몸무게 BMI지수를 출력
+   if을 통해 BMI지수가 25이상 과체중, 18 이하라면 저체중, 나머지는 정상으로 출력
+    -->
+    
+<% 
+   request.setCharacterEncoding("utf-8");
+   
+   String name = request.getParameter("name");
+   String sCm = request.getParameter("cm");
+   String sKg = request.getParameter("kg");
+   
+   //bmi계산
+   double cm = Double.parseDouble(sCm);
+   double kg = Double.parseDouble(sKg);
+   double bmi = kg / (cm/100 * cm/100);
+   
+/*    double cm = Double.parseDouble((request.getParameter("cm")));
+   double kg = Double.parseDouble(request.getParameter("kg")); */
+   
+/*    String bmi = "";
+   if( ((cm/100) + (((cm%100)/10)*0.1)) >= 25 ) {
+      bmi = "과체중";
+   }
+   else if ( ((cm/100) + (((cm%100)/10)*0.1)) <= 18 ){
+      bmi = "저체중";
+   }
+   else {
+      bmi = "정상";
+   } */
+
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+   
+   <h1><%= name %>님의 결과</h1>
+      이름:<%= name %><br>
+      신장:<%= cm %><br>
+      중량:<%= kg %><br>
+      BMI지수 계산값:<%= bmi %><br>
+      BMI지구 결과:
+      <% if(bmi >= 25) { %>
+      <b>과제중</b>
+      <% } else if(bmi <= 18) { %>
+      <b>저체중</b>
+      <% } else { %> 
+      <b>정상</b>
+      <% } %>
+      
+</body>
+</html>

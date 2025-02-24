@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>Emp정보</h3><br>
+	
+	<table>
+		<tr align="left">
+			<td>사원번호:</td>
+			<td><input type="text" name="employee_id"></td>
+		</tr>
+		<tr align="left">
+			<td>이름:</td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr align="left">
+			<td>성별:</td>
+			<td>
+				<input type="radio" name="gender">남자
+		    	<input type="radio" name="gender">여자
+			</td>
+		</tr>
+		<tr align="left">
+			<td>직업:</td>
+			<td><input type="text" name="job"></td>
+		</tr>
+		<tr align="left">
+			<td>상사:</td>
+			<td><input type="text" name="job"></td>
+		</tr>
+		<tr align="left">
+			<td>입사일:</td>
+			<td><input type="date"></td>
+		</tr>
+		<tr align="left">
+			<td>급여:</td>
+			<td><input type="text" name="salary"></td>
+		</tr>
+		<tr align="left">
+			<td>커미션:</td>
+			<td><input type="text" name="commission"></td>
+		</tr>
+		<tr align="left">
+			<td>부서번호:</td>
+			<td>
+				<select>
+					<option>10ACCOUNTING NEWYORK</option>
+				</select>
+			
+			</td>
+		</tr>
+		<tr colspan="2" align="center">
+				
+			<td>
+				<input type="submit" value="저장">
+				<input type="reset" value="취소">			
+			</td>
+			
+		</tr>										
+			
+	
+	
+	</table>
+
+	
+	
+	
+
+</body>
+</html>

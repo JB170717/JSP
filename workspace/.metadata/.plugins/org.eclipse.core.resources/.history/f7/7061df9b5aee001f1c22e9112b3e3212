@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>입력양식</h3>
+	
+    <!-- 사용자에게 입력받은 값을 서버에 전송하려면 form -->
+    
+    <form>
+    	
+    	아이디:<input type="text" name="id"><br>
+    	비밀번호:<input type="password" name="pw"><br>
+    	생일:<input type="date"><br>
+    	
+    	
+    	<!-- checkbox, radior그룹은 
+    	반드시 name속성을 통일시켜서 하나의그룹으로 만듭니다. 
+    	-->
+    	
+    	관심분야:
+    	<input type="checkbox" name="inter">JAVA
+    	<input type="checkbox" name="inter">JSP
+    	<input type="checkbox" name="inter">DB
+    	<input type="checkbox" name="inter">HTML
+    	
+    	<br>
+    	전공:
+    	<input type="radio" name="major">국문학과
+    	<input type="radio" name="major">수학과
+    	<input type="radio" name="major">철학과
+    	<input type="radio" name="major">경제학과
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    </form>
+    
+</body>
+</html>

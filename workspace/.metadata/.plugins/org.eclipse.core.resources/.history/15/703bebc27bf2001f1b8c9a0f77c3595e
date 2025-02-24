@@ -1,0 +1,100 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title> ë¡ê·¸ì¸ | í¬ì´ë¦¬ì¤í¸ì¸í¬ì´ </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/common.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common.js"></script>  
+<script src="js/jquery.smooth-scroll.min.js"></script> 
+
+<script type="text/javascript">
+// íì¬ íì´ì§ìë§ ì ì©
+$(document).ready(function(){
+	$('.switch').click(function(){			// ë¡ê·¸ì¸ ì ì§ ìë
+		$(this).toggleClass("switchOn");
+	});
+	$('.quick_area').hide();				// ì°ì¸¡ ë¹ ë¥¸ ì¤í ë©ë´ ì¨ê¹ 
+});
+</script>
+</head>
+
+<body>
+
+<!-- wrap -->
+<div id="wrap" class="s_point">
+	
+	<div id="container" id="layout0">
+		
+		<!-- bodytext_area -->
+		<div class="bodytext_area box_inner">
+			<!-- login-wrap -->
+			<div class="login_wrap">
+				<h1 class="loginTit"><a href="#"><img src="img/tit_login.png" alt="TOURIST IN TOUR" /></a></h1>
+
+				<ul class="login_list">
+					
+					<li style="padding: 0;"><input type="text" placeholder="ìì´ë" style="width:100%;"></li>
+					<li style="padding: 0;"><input type="password" placeholder="ë¹ë°ë²í¸" style="width:100%;"></li>
+					<li style="padding: 0; display: flex; justify-content: center;" >
+						<a href="#" style="color:#000; padding: 0 10px;">íìê°ì</a>
+						<a href="#" style="color:#000;  padding: 0 10px;">ë¡ê·¸ì¸</a>
+					
+					</li>
+				</ul>
+				
+				<ul class="login_list">
+
+					<li class="kakao"><a href="javascript:;"><strong>ì¹´ì¹´ì¤í¡</strong> ë¡ê·¸ì¸</a></li>
+					<li class="naver"><a href="javascript:;"><strong>ë¤ì´ë²</strong> ë¡ê·¸ì¸</a></li>
+					<li class="facebook"><a href="javascript:;"><strong>íì´ì¤ë¶</strong> ë¡ê·¸ì¸</a></li>
+					<li class="cellphone"><a href="javascript:;"><strong>ì´ë©ì¼ ì£¼ì</strong> ë¡ê·¸ì¸</a></li>
+				</ul>
+				<div class="btnonoff_line">
+					<div class="switch"></div>
+					<p>
+					    <a href="#" class="btn_onoff" onclick="return false;">ë¡ê·¸ì¸ ì ì§</a>
+					    
+					</p>
+
+				</div>
+        				
+			</div>
+			<!-- //login-wrap -->
+
+		</div>
+		<!-- //bodytext_area -->
+
+	</div>
+	<!-- //container -->
+
+	<footer>
+		<div class="foot_area box_inner">
+			<ul class="foot_list clear">
+				<li><a href="javascript:;">ì´ì©ì½ê´</a></li>
+				<li><a href="javascript:;">ê°ì¸ì ë³´ì·¨ê¸ë°©ì¹¨</a></li>
+			</ul>
+			<h2>í¬ì´ë¦¬ì¤í¸ì¸í¬ì´</h2>
+            <p class="addr">ìì¸í¹ë³ì ì¢ë¡êµ¬ ííë 9ê¸¸ ì²­ì´ë¹ë© 5ì¸µ <span class="gubun">/</span>        
+				<span class="br_line">ëíì í <span class="space0">02-1234-5678</span> <span class="gubun">/</span>        
+					<span class="br_line">E-mail : <span class="space0"> titour@touristintour.com</span></span>
+				</span>
+			</p>
+			<p class="copy box_inner">Copyright(c) TouristInTour all right reserved</p>
+			<ul class="snslink clear">
+				<li><a href="javascript:;">blog</a></li>
+				<li><a href="javascript:;">facebook</a></li>
+				<li><a href="javascript:;">instargram</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+<!-- //wrap -->
+
+</body>
+</html>

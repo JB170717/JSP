@@ -1,0 +1,189 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title> íìê°ì | í¬ì´ë¦¬ì¤í¸ì¸í¬ì´ </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/common.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common.js"></script>  
+<script src="js/jquery.smooth-scroll.min.js"></script> 
+
+</head>
+
+<body>
+
+
+<!-- wrap -->
+<div id="wrap">
+
+	<header id="header">
+		<div class="header_area box_inner clear">	
+			<h1><a href="javascript;">Tourist in tour</a></h1>
+			<p class="openMOgnb"><a href="#"><b class="hdd">ë©ë´ì´ê¸°</b> <span></span><span></span><span></span></a></p>
+			<!-- header_cont -->
+			<div class="header_cont">
+				<ul class="util clear">
+					<li><a href="javascript:;">ë¡ê·¸ì¸</a></li>
+					<li><a href="javascript:;">íìê°ì</a></li>
+				</ul>		
+				<nav>
+				<ul class="gnb clear">
+					<li><a href="javascript:;" class="openAll1">ì¬íì ë³´</a>
+
+                        <div class="gnb_depth gnb_depth2_1">
+                            <ul class="submenu_list">
+                                <li><a href="javascript:;">êµ­ë´</a></li>
+                                <li><a href="javascript:;">í´ì¸</a></li>
+                            </ul>
+                        </div>
+					</li>
+					<li><a href="javascript:;" class="openAll2">ê³ ê°ì¼í°</a>
+				        <div class="gnb_depth gnb_depth2_2">
+                            <ul class="submenu_list">
+                                <li><a href="javascript:;">ê³µì§ì¬í­</a></li>
+                                <li><a href="javascript:;">ë¬¸ìíê¸°</a></li>
+                            </ul>
+                        </div>
+					</li>
+					<li><a href="javascript:;" class="openAll3">ìíí¬ì´</a>
+                        <div class="gnb_depth gnb_depth2_3">
+                            <ul class="submenu_list">
+                                <li><a href="javascript:;">íë¡ê·¸ë¨ ìê°</a></li>
+                                <li><a href="javascript:;">ì¬íìë£</a></li>
+                            </ul>
+                        </div>
+					</li>
+					<li><a href="javascript:;" class="openAll4">í°ì¼/ê°ì´ë</a>
+                        <div class="gnb_depth gnb_depth2_4">
+                            <ul class="submenu_list">
+                                <li><a href="javascript:;">í­ê³µ</a></li>
+                                <li><a href="javascript:;">í¸í</a></li>
+                            </ul>
+                        </div>
+					</li>
+				</ul>
+                </nav>
+				<p class="closePop"><a href="javascript:;">ë«ê¸°</a></p>
+			</div>
+			<!-- //header_cont -->
+		</div>
+	</header>
+	
+	<div id="container">
+		<!-- location_area -->
+		<div class="location_area member">
+			<div class="box_inner">
+				<h2 class="tit_page">TOURIST <span class="in">in</span> TOUR</h2>
+				<p class="location">MEMBER <span class="path">/</span> íìê°ì</p>
+				<ul class="page_menu clear">
+					<li><a href="javascript:;" class="on">íìê°ì</a></li>
+				</ul>
+			</div>
+		</div>	
+		<!-- //location_area -->
+
+		<!-- bodytext_area -->
+		<div class="bodytext_area box_inner">
+			<!-- appForm -->
+			<form action="#" class="appForm">
+				<fieldset>
+					<legend>ìë´ë¬¸ì ìë ¥ ìì</legend>
+					<p class="info_pilsoo pilsoo_item">íììë ¥</p>
+					<ul class="app_list">
+						<li class="clear">
+                            <label for="email_lbl" class="tit_lbl pilsoo_item">ì´ë©ì¼</label>
+                            <div class="app_content email_area">
+                                <input type="text" class="w160" id="email_lbl" title="ì´ë©ì¼ ì£¼ì" />
+                                <span class="ico_space">@</span>
+                                <input type="text" class="w160" title="ì´ë©ì¼ ì ê³µìì²´ ìë ¥" />										
+                                <div class="select_common">
+                                    <select title="ì´ë©ì¼ ì ê³µìì²´ ëª©ë¡">
+                                        <option value="">ì§ì ìë ¥</option>
+                                        <option value="">naver.com</option>
+                                        <option value="">hanmail.net</option>
+                                    </select>
+                                </div>										
+                            </div>
+						</li>
+						<li class="clear">
+							<label for="name_lbl" class="tit_lbl pilsoo_item">ìì±ìëª</label>
+							<div class="app_content"><input type="text" class="w100p" id="name_lbl" placeholder="ì´ë¦ì ìë ¥í´ì£¼ì¸ì"/></div>
+						</li>
+						<li class="clear">
+							<label for="pwd_lbl" class="tit_lbl pilsoo_item">ë¹ë°ë²í¸</label>
+							<div class="app_content"><input type="password" class="w100p" id="pwd_lbl" placeholder="ë¹ë°ë²í¸ë¥¼ ìë ¥í´ì£¼ì¸ì"/></div>
+						</li>
+						<li class="clear">
+							<label for="pwd2_lbl" class="tit_lbl pilsoo_item">ë¹ë°ë²í¸ íì¸</label>
+							<div class="app_content"><input type="password" class="w100p" id="pwd2_lbl" placeholder="ë¹ë°ë²í¸ë¥¼ ë¤ì íë² ìë ¥í´ì£¼ì¸ì"/></div>
+						</li>
+						<li class="clear">
+							<label for="phone_lbl" class="tit_lbl pilsoo_item">ì°ë½ì²</label>
+							<div class="app_content"><input type="tel" class="w100p" id="phone_lbl" placeholder="í´ëí°â-âìì´ ì«ìë§ ìë ¥íì¸ì"/></div>
+						</li>
+						<li class="clear">
+							<span class="tit_lbl">ì±ë³</span>
+							<div class="app_content radio_area">
+								<input type="radio" class="css-radio" id="mmm_lbl" name="gender"><label for="mmm_lbl">ë¨</label>
+								<input type="radio" class="css-radio" id="www_lbl" name="gender"><label for="www_lbl">ì¬</label>
+							</div>
+						</li>
+						<li class="clear">
+                            <span class="tit_lbl">SNS ìì ëì</span>
+							<div class="app_content checkbox_area">
+								<input type="checkbox" class="css-checkbox" id="agree_lbl" name="agree1"><label for="agree_lbl">ëìí¨</label>
+							</div>
+						</li>
+						<li class="clear">
+                            <span class="tit_lbl">ì´ë©ì¼ ìì ëì</span>
+							<div class="app_content checkbox_area">
+								<input type="checkbox" class="css-checkbox" id="agree_lb2" name="agree2"><label for="agree_lb2">ëìí¨</label>
+							</div>
+						</li>
+						<li class="clear">
+							<label for="content_lbl" class="tit_lbl">ë¬¸ìë´ì©</label>
+							<div class="app_content"><textarea id="content_lbl" class="w100p" placeholder="ê°ë¨í ìë´ ìì²­ ì¬í­ì ë¨ê²¨ì£¼ìë©´ ë³´ë¤ ìì¸í ìë´ì´ ê°ë¥í©ëë¤.
+ì í ìë´ í¬ë§ì ê¸°ì¬ ë¶íëë¦½ëë¤."></textarea></div>
+						</li>
+					</ul>
+					<p class="btn_line"><a href="javascript:;" class="btn_baseColor">ë±ë¡</a></p>	
+				</fieldset>
+			</form>
+			<!-- //appForm -->
+			
+		</div>
+		<!-- //bodytext_area -->
+
+	</div>
+	<!-- //container -->
+
+	<footer>
+		<div class="foot_area box_inner">
+			<ul class="foot_list clear">
+				<li><a href="javascript;">ì´ì©ì½ê´</a></li>
+				<li><a href="javascript;">ê°ì¸ì ë³´ì·¨ê¸ë°©ì¹¨</a></li>
+			</ul>
+			<h2>í¬ì´ë¦¬ì¤í¸ì¸í¬ì´</h2>
+			<p class="addr">ìì¸í¹ë³ì ì¢ë¡êµ¬ ííë 9ê¸¸ ì²­ì´ë¹ë© 5ì¸µ <span class="gubun">/</span>        
+				<span class="br_line">ëíì í <span class="space0">02-1234-5678</span> <span class="gubun">/</span>        
+					<span class="br_line">E-mail : <span class="space0"> titour@touristintour.com</span></span>
+				</span>
+			</p>
+			<p class="copy box_inner">Copyright(c) TouristInTour all right reserved</p>
+			<ul class="snslink clear">
+				<li><a href="javascript:;">blog</a></li>
+				<li><a href="javascript:;">facebook</a></li>
+				<li><a href="javascript:;">instargram</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+<!-- //wrap -->
+
+</body>
+</html>

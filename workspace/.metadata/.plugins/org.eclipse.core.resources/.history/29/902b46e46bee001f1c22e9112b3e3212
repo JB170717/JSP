@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	
+	<%
+	//모든 자바코드가 들어갈 수 있음~	
+	int a=1;
+		
+	if(a>=10){
+		out.println("참");
+	}else{
+		out.println("거짓"); //이거 하면 화면으로 출력이가능
+	}	
+	%>
+
+	<hr>
+	
+	<%
+	if(a >= 10){
+		out.println("<b>참</b>");
+	}else{
+		out.println("<b>거짓</b>");
+	}
+	
+	%>
+
+
+
+
+
+
+</body>
+</html>
