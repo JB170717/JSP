@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;JSPBasic&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     jstl-1.1.2.jar&#x0D;&#x0A;     standard-1.1.2.jar&#x0D;&#x0A;     ojdbc11.jar" description="Copy files" element1="src/main/webapp/WEB-INF/lib/jstl-1.1.2.jar" element2="src/main/webapp/WEB-INF/lib/standard-1.1.2.jar" element3="src/main/webapp/WEB-INF/lib/ojdbc11.jar" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1740453849178" target="/MyWeb/src/main/webapp/WEB-INF/lib" units="0" version="1.0"/>
+</session>

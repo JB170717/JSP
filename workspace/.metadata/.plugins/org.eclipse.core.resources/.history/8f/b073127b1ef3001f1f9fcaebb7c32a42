@@ -1,0 +1,23 @@
+package com.myweb.users.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class UsersServuceImpl implements UsersService{
+
+	@Override
+	public void join(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		//값을 받음
+		String emailPrev= request.getParameter("email_prev");
+		String emailNext= request.getParameter("email_next");
+		String name= request.getParameter("name");
+		String pw= request.getParameter("pw");
+		String phone= request.getParameter("phone");
+		String gender= request.getParameter("gender");
+		String snsYn= request.getParameter("sys_yn");
+		
+	}
+
+	
+}

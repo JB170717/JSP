@@ -1,0 +1,53 @@
+package com.myweb.users.service;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.myweb.users.model.UsersDAO;
+import com.myweb.users.model.UsersDTO;
+
+public class UsersServiceImpl implements UsersService{
+
+	@Override
+	public void join(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException {
+		
+		//값을 받음
+		String emailPrev= request.getParameter("email_prev");
+		String emailNext= request.getParameter("email_next");
+		String name= request.getParameter("name");
+		String pw= request.getParameter("pw");
+		String phone= request.getParameter("phone");
+		String gender= request.getParameter("gender");
+		String snsYn= request.getParameter("sns_yn");
+		if(snsYn ==null) {
+			snsYn="N";
+		}
+		String email = emailPrev+"@"+emailNext;
+	
+//		System.out.println(emailPrev);
+//		System.out.println(emailNext);
+//		System.out.println(name);
+//		System.out.println(pw);
+//		System.out.println(phone);
+//		System.out.println(gender);
+//		System.out.println(snsYn);
+		
+		//DAO객체 생성
+		UsersDAO dao= UsersDAO.getInstance();
+		
+		int result=dao.idDuplicationCheck(email);
+		if(result==1) {
+			//중복임....			
+		}else {
+			UsersDTO dto = new UsersDTO(email, name, pw, phone, gender, snsYn, null);
+			dao.join(dto);
+		}
+		
+		
+	}
+
+	
+}

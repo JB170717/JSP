@@ -1,0 +1,5 @@
+package com.myweb.users.service;
+
+public class UsersServuceImpl {
+
+}

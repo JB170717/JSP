@@ -1,0 +1,5 @@
+package com.myweb.users.model;
+
+public class UsersDTO {
+
+}

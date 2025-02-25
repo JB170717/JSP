@@ -1,0 +1,7 @@
+package com.myweb.users.service;
+
+public interface UsersService {
+	
+	void join(HttpServletRequest request,HttpServletResponse response) throws Exception;
+	
+}
