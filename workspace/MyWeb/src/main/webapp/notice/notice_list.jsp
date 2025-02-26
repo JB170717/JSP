@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<%@include file="../include/header.jsp" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>    	
 	
+	<%@ include file="../include/header.jsp" %>
+
 	<div id="container">
 		<!-- location_area -->
 		<div class="location_area customer">
@@ -19,6 +21,7 @@
 
 		<!-- bodytext_area -->
 		<div class="bodytext_area box_inner">
+		
 			<form action="#" class="minisrch_form">
 				
 				<fieldset>
@@ -39,84 +42,37 @@
 					<tr>
 						<th scope="col">번호</th>
 						<th scope="col">제목</th>
-						<th scope="col">조회수</th>
+						<th scope="col">작성자</th>
 						<th scope="col">작성일</th>
 					</tr>
 				</thead>
 				<tbody>
+					
+					<c:forEach var="dto" items="${list }">
 					<tr>
-						<td>1</td>
-						<td class="tit_notice"><a href="javascript:;">이번 여름 휴가 제주 갈까? 미션 투어 (여행경비 50만원 지원)</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
+						<td>${dto.bno }</td>
+						<td class="tit_notice"><a href="getContent.board?bno=${dto.bno }">${dto.title }</a></td>
+						<td>${dto.email }</td>
+						<td>
+							<fmt:parseDate var="time" value="${dto.regdate }" pattern="yyyy-MM-dd HH:mm:ss"/>
+							<fmt:formatDate value="${time }" pattern="yyyy년MM월dd일"/>
+						</td>
 					</tr>
-					<tr>
-						<td>2</td>
-						<td class="tit_notice"><a href="javascript:;">박물관 미션 투어 응모 당첨자 발표</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td class="tit_notice"><a href="javascript:;">추석 연휴 티켓/투어 배송 및 직접 수령 안내</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td class="tit_notice"><a href="javascript:;">하롱베이 서비스 OPEN! (여행정보, 가이드북, 가이드맵)</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td class="tit_notice"><a href="javascript:;">투어리스트인투어 서비스 점검 안내 - 투어리스트인투어에서 매월 실시하는 정기점검 안내</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>6</td>
-						<td class="tit_notice"><a href="javascript:;">이번 여름 휴가 제주 갈까? 미션 투어 (여행경비 50만원 지원)</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>7</td>
-						<td class="tit_notice"><a href="javascript:;">박물관 미션 투어 응모 당첨자 발표</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td class="tit_notice"><a href="javascript:;">추석 연휴 티켓/투어 배송 및 직접 수령 안내</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>9</td>
-						<td class="tit_notice"><a href="javascript:;">하롱베이 서비스 OPEN! (여행정보, 가이드북, 가이드맵)</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td class="tit_notice"><a href="javascript:;">투어리스트인투어 서비스 점검 안내</a> </td>
-						<td>123</td>
-						<td>2018-08-01</td>
-					</tr>
+					</c:forEach>
+					
 				</tbody>
 			</table>
 			<!-- pagination -->
 			<div class="pagination">
-				<a href="javascript:;" class="firstpage  pbtn"><img src="img/btn_firstpage.png" alt="첫 페이지로 이동"></a>
-				<a href="javascript:;" class="prevpage  pbtn"><img src="img/btn_prevpage.png" alt="이전 페이지로 이동"></a>
+				<a href="javascript:;" class="firstpage  pbtn"><img src="../img/btn_firstpage.png" alt="첫 페이지로 이동"></a>
+				<a href="javascript:;" class="prevpage  pbtn"><img src="../img/btn_prevpage.png" alt="이전 페이지로 이동"></a>
 				<a href="javascript:;"><span class="pagenum currentpage">1</span></a>
 				<a href="javascript:;"><span class="pagenum">2</span></a>
 				<a href="javascript:;"><span class="pagenum">3</span></a>
 				<a href="javascript:;"><span class="pagenum">4</span></a>
 				<a href="javascript:;"><span class="pagenum">5</span></a>
-				<a href="javascript:;" class="nextpage  pbtn"><img src="img/btn_nextpage.png" alt="다음 페이지로 이동"></a>
-				<a href="javascript:;" class="lastpage  pbtn"><img src="img/btn_lastpage.png" alt="마지막 페이지로 이동"></a>
+				<a href="javascript:;" class="nextpage  pbtn"><img src="../img/btn_nextpage.png" alt="다음 페이지로 이동"></a>
+				<a href="javascript:;" class="lastpage  pbtn"><img src="../img/btn_lastpage.png" alt="마지막 페이지로 이동"></a>
 			</div>
 			<!-- //pagination -->
 			
@@ -126,4 +82,5 @@
 	</div>
 	<!-- //container -->
 
-	<%@include file ="../include/footer.jsp" %>
+	
+	<%@ include file="../include/footer.jsp" %>

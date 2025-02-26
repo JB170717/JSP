@@ -140,34 +140,66 @@ public class UsersDAO {
 	}
 	
 	//회원정보수정
-	public int modify(String name,String gender, String phone, String snsYn, String email) {
-		int result=0;
+	public int modify(String name,
+					  String gender,
+					  String phone,
+					  String snsYn,
+					  String email) {
+		int result = 0;
 		
-		Connection conn=null;
-		PreparedStatement pstmt=null;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
 		
-		String sql="UPDATE USERS SET NAME=?, GENDER=?, PHONE=?, SNS_YN=? WHERE EMAIL=?";
+		String sql = "UPDATE USERS SET NAME = ?, GENDER = ?, PHONE =?, SNS_YN = ? WHERE EMAIL = ?";
 		
 		try {
 			
-			conn=dataSource.getConnection();
-			pstmt=conn.prepareStatement(sql);
-			pstmt.setString(1, name);
+			conn = dataSource.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, name );
 			pstmt.setString(2, gender);
 			pstmt.setString(3, phone);
 			pstmt.setString(4, snsYn);
 			pstmt.setString(5, email);
 			
-			result=pstmt.executeUpdate();
+			result = pstmt.executeUpdate(); //성공시 1반환, 실패시 0
 			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			JdbcUtil.close(conn, pstmt, null);
+		}
+		
+		return result;
+	}
+	
+	public int delete(String email) {
+		
+		int result=0;
+		
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		
+		String sql="DELETE FROM USERS WHERE EMAIL =?";
+		
+		try {
+			
+			conn=dataSource.getConnection();
+			pstmt=conn.prepareStatement(sql);			
+			pstmt.setString(1, email);
+			
+			result=pstmt.executeUpdate();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {
 			JdbcUtil.close(conn, pstmt, null);
-		}		
+		}
 		
 		return result;
+		
 	}
+	
 	
 	
 	

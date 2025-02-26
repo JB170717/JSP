@@ -63,6 +63,10 @@ public class UsersController extends HttpServlet {
 			
 			service.modify(request, response);
 			
+		}else if(command.equals("/users/delete.users")) { //회원 탈퇴
+			
+			service.delete(request, response);
+			
 		}
 		
 		

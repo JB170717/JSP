@@ -19,26 +19,11 @@
 		<div class="bodytext_area box_inner">			
 			<ul class="bbsview_list">
 				<li class="bbs_title">박물관 미션 투어 응모 당첨자 발표</li>
-				<li class="bbs_hit">작성일 : <span>2018.08.09</span></li>
-				<li class="bbs_date">작성자 : <span>홍길자</span></li>
+				<li class="bbs_hit">작성일 : <span>${dto.regdate }</span></li>
+				<li class="bbs_date">작성자 : <span>${dto.email}</span></li>
 				<li class="bbs_content">
 					<div class="editer_content">
-					    안녕하세요. 믿을 수 있는 여행정보, 투어리스트인투어입니다.<br>
-                        박물관 미션투어에 관심과 참여 감사드립니다. <br>
-                        선정되신 분들도 진심으로 축하드립니다. <br>
-                        앞으로도 큰 관심 부탁드리며, 메일로도 안내 예정이니 참고하시기 바랍니다. <br>
-                        감사합니다. <br><br>
-                        [당첨자]<br>
-                        김용* kimyong***@naver.com <br>
-                        인봉* in2018a***@naver.com<br>
-                        예경* yyhong***@naver.com<br>
-                        한진* haha***@naver.com<br>
-                        박수* pky**@naver.com<br>
-                        명진* mma5**@nate.com<br>
-                        김영* rtfg6*@naver.com<br>
-                        서영* seo20**@gmail.com<br>
-                        윤소* yoon2***@naver.com<br>
-                        지은* ji***@daum.net
+					   ${dto.content }
                     </div>
 				</li>
 			</ul>
