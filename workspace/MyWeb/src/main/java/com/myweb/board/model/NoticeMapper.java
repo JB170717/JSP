@@ -1,6 +1,7 @@
-package com.myweb.board.model;
+ package com.myweb.board.model;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public interface NoticeMapper {
 
@@ -9,6 +10,8 @@ public interface NoticeMapper {
 	//마이바티스의 매개변수는 기본이 1개(DTO,MAP)타입을 사용합니다.
 	int regist(BoardDTO dto);	
 	ArrayList<BoardDTO> getList();
-	BoardDTO getContent(int bno);
+	BoardDTO getContent(String bno);
+	int update(Map<String, String> map);
+	void delete(String bno);
 	
 }

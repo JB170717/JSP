@@ -13,3 +13,33 @@
 1740380134333	Delete element
 1740382118508	Move 3 resources to 'user'
 1740382139009	Move 3 resources to 'notice'
+1740443831576	Rename type 'UserDAO'
+1740444226137	Delete element
+1740444931004	Rename resource 'user'
+1740448379902	Rename type 'UsersServic'
+1740449771205	Rename type 'UsersServuceImpl'
+1740464511052	Delete element
+1740464574473	Delete element
+1740465807088	Delete element
+1740466670178	Rename type 'UsersDAO'
+1740466673554	Rename type 'UsersDTO'
+1740466721018	Delete elements
+1740466725228	Rename type 'UsersDAO123'
+1740466728051	Rename type 'UsersDTO123'
+1740467027331	Delete element
+1740534830412	Rename type 'BoardServiceimpl'
+1740535376595	Rename resource 'com.myweb.BoardDTO'
+1740535386188	Delete element
+1740535933357	Delete element
+1740545699666	Rename type 'MybaitsUtil'
+1740552056316	Delete element
+1740554915430	Rename type 'NoticeBoard'
+1740615695659	Rename resource 'modify.jsp'
+1740632692896	Delete element
+1740633163681	Rename package 'com.myweb.util0'
+1740633172708	Rename package 'com.myweb.util0_filter'
+1740633353411	Rename type 'ChanFilter'
+1740633577231	Delete element
+1740633651940	Rename package 'com.myweb.util_filter'
+1740633967835	Rename type 'AuthentiocationFilter'
+1740634948274	Delete element

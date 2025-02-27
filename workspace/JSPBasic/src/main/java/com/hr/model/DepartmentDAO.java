@@ -19,6 +19,7 @@ public class DepartmentDAO {
 	private DepartmentDAO() {
 		
 		try {
+			//커넥션풀
 			InitialContext context=new InitialContext();
 			dataSource = (DataSource)context.lookup("java:comp/env/jdbc/oracle");
 		} catch (Exception e) {

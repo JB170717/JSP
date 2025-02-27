@@ -2,9 +2,20 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<section name="java.lang.Class">
-		<item key="replaceBarOpen" value="false"/>
+		<item key="replaceBarOpen" value="true"/>
 		<list key="findhistory">
+			<item value="마이페이지"/>
+			<item value="마이"/>
+			<item value="마이페"/>
+			<item value="회원탈퇴"/>
+			<item value="sysYn"/>
+			<item value="form"/>
+			<item value="회원"/>
+			<item value="이에일 제공"/>
 			<item value="th"/>
+		</list>
+		<list key="replacehistory">
+			<item value="snsYn"/>
 		</list>
 	</section>
 </section>

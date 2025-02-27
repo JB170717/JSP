@@ -16,6 +16,7 @@
 		}
 	%>
 	<%=sum %>
+	<!-- 1~10까지 누적 -->
 	<c:set var="sum" value="0" />
 	<c:forEach var="i" begin="1" end="10" step="1">
 		<c:set var="sum" value="${sum+i}"/>
